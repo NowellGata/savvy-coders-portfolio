@@ -1,31 +1,50 @@
 <style>
+
+.headline1 {
+    font-family: Helvetica;
+    font-size: 75px;
+    text-align: center;
+}
+
+.headline2 {
+    font-family: Helvetica;
+    font-size: 45px;
+    text-align: center;
+}
 nav {background-color:powderblue;
+    font-family: Impact;
+    font-size: 24px;
 }
 
-header {font-family:Arial, Helvetica, sans-serif;
-        height: 55px;
+header {font-family:Helvetica;
+        height: 200px;
+        text-align: center;
 }
 
-p {text-align: center; width: 550px;
+p {text-align: left; width: 550px;
 }
 
 footer {background-color:royalblue;
+    font-family:helvetica;
 }
 
 .primary {background-color:cornflowerblue;
 }
 
-.fancybig {font-family:Impact; font-size:32px;
+.fancybig {font-family: helvetica ; font-size:32px;
 }
 
 #test {
     height: 20vh;
     width: 80vw;
     background-color:seagreen;
+    text-align: left;
 }
 
 section p {
     background: blanchedalmond;
+    font-family:helvetica;
+    text-align: left;
 }
 
 p > span {
@@ -46,6 +65,7 @@ p ~ img {
 
 .test2 {
 background-color:orange;
+text-align: left;
 }
 
 div.test2 {
@@ -61,7 +81,7 @@ border: solid 3px rosybrown;
 }
 
 .container {
-margin: 0 auto; max-width: 960px; width: 80vw;
+margin: 5px auto; max-width: 500px; width: 80vw;
 }
 
 </style>

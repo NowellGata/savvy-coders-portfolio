@@ -26,6 +26,52 @@
         .fancybig {font-family:Impact; font-size:32px;
         }
 
+        #test {
+            height: 20vh;
+            width: 80vw;
+            background-color:seagreen;
+        }
+
+        section p {
+            background: blanchedalmond;
+        }
+
+        p > span {
+            background-color: ivory;
+        }
+
+        span > span {
+            background-color: rebeccapurple;
+        }
+
+        p + p {
+            background-color: yellowgreen;
+        }
+
+        p ~ img {
+            border: solid 3px; color:hotpink;
+        }
+
+.test2 {
+    background-color:orange;
+}
+
+div.test2 {
+    background-color:grey;
+}
+
+img:nth-child(even) {
+    border: solid 3px gold;
+}
+
+img:nth-child(odd) {
+    border: solid 3px rosybrown;
+}
+
+.container {
+    margin: 0 auto; max-width: 960px; width: 80vw;
+}
+
     </style>
 
 </head>
@@ -46,14 +92,16 @@
         <a href="demo.html"><li>Demo Day Project</li></a>
     </nav>
 
-    <header>
+    <header class= "container">
     <h1>Nowell Gata's Portfolio</h1>
     <h2>A Web Developer</h2>
     </header>
     <main>
-    <section>
+        <div class="test1 test2">Goodbye</div>
+        <div>galaxy</div>
+        <section>
         <h2>A Section Header!!</h2>
-        <p class="fancybig">
+        <p class="test2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat.
         Ullam beatae harum veniam rerum. Ad, autem vitae harum illo quo,
         beatae quae possimus commodi similique maxime repellendus,
@@ -64,6 +112,7 @@
         illo esse aliquam repellat ullam perspiciatis quasi, nisi deserunt
         architecto culpa assumenda officia eos rerum sit eligendi id enim sed.
         </p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic libero laborum, impedit unde optio accusantium cum perspiciatis? Sapiente deserunt dolore eveniet suscipit culpa. Dolore consequuntur nam nobis doloremque nulla sapiente.</p>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
         architecto doloribus unde eum consequuntur delectus provident
@@ -79,13 +128,40 @@
         deserunt deleniti est dignissimos distinctio quibusdam temporibus
         iusto doloremque accusamus nam odit!
         </p>
-        <p>
-        Repudiate libero qui est magni dolores neque, tempore, esse optio,
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </ul>
+        <p>ANOTHER PARAGRAPH Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum rerum asperiores explicabo molestias minima mollitia nam? Ad totam porro aliquid voluptatibus placeat cupiditate! Neque, nihil. Doloribus debitis suscipit aperiam est!</p>
+
+        <div>
+            <img src="https://picsum.photos/200" alt="Random ass imagefrom the internet">
+
+            <img src="https://picsum.photos/200" alt="Yet another random image">
+
+            <img src="https://picsum.photos/200" alt="Random ass imagefrom the internet">
+
+            <img src="https://picsum.photos/200" alt="Random ass imagefrom the internet"></div>
+
+        <p> FIRST
+        Repudiate libero qui est magni dolores neque, tempore,  esse optio,
         laborum maxime quibusdam officia! Quidem animi repudiandae magnam, et
         perspiciatis odio sed odit molestias quasi nemo error numquam
         consectetur saepe?
         </p>
-        <p>
+        <p>SECOND
         Eligendi nam debitis sit explicabo! Tempora maxime totam temporibus
         assumenda perferendis earum iure incidunt nulla? Omnis vel
         voluptatibus voluptatum deserunt dolore placeat odio porro nihil
@@ -94,26 +170,26 @@
     </section>
     <section>
         <h2>Another Silly Section</h2>
-        <p>
+        <p class="container">THIRD
         Corrupti, corporis. Dignissimos quam sapiente aliquid nam porro
         adipisci quis, quisquam obcaecati beatae modi exercitationem minus
         atque cupiditate vel voluptas blanditiis corrupti recusandae at ea est
         rem laboriosam dicta asperiores.
         </p>
-        <p>
+        <p>FOURTH
         Autem omnis earum, sed blanditiis nulla, non natus minus corrupti
         voluptatem deleniti qui provident nesciunt, doloribus molestias
         laborum eveniet consequuntur ratione quos soluta? Animi tempore itaque
         suscipit quibusdam minima ducimus!
         </p>
-        <p>
+        <p>FIFTH
         Ea sequi molestias ex veritatis cum eum eaque sed iste similique,
         doloremque soluta, quo fugiat optio natus in eveniet nesciunt.
         Accusantium animi explicabo a rerum nihil sequi dicta itaque mollitia?
         </p>
     </section>
     </main>
-    <footer>
+    <footer class="container">
         &copy; 2019 Nowell Gata
     </footer>
 </body>

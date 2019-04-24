@@ -9,7 +9,7 @@
     <title>Contact Me</title>
   </head>
   <h1>Contact Me</h1>
-  <form action="" class= container>
+  <form action="https://formspree.io/nowell.gata@gmail.com" method="POST">
    <span>
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="userName" />
@@ -29,21 +29,18 @@
       <input type="tel" name="userPhone" id="phone" />
    </span>
 
-   <div class="flex">
+   <div class="flex flex--column">
       <textarea name="message" id="message" cols="30" rows="10"></textarea>
    </div>
 
-   <div>
-      <input type="submit" value="send message" />
-   </div>
-   <div>
-      <input type="reset" value="clear form" />
-   </div>
+
     </span>
 
 
-    <label>What's this message about?
+    <label>
+      <div>What's this message about?
     </div>
+    <div>
         <input type="radio" name="subject" value="professional" checked />I'd
         like to hire you!
       </div>
@@ -55,6 +52,21 @@
         <input type="radio" name="subject" value="professional" checked />I'd
         like to keep you hanging!
       </div>
+
+      <div class="dropdown">
+          <button class="dropbtn">Choose Your Villian</button>
+          <div class="dropdown-content">
+            <a href="#">Skeletor</a>
+            <a href="#">Stormshadow</a>
+            <a href="#">Megatron</a>
+          </div>
+        </div>
+
+      <div>
+      <input type="submit" value="Send Message" />
+      <input type="reset" value="Clear Form" />
+      </div>
+
     </label>
   </form>
   <body></body>

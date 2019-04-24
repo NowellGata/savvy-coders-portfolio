@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Me</title>
+  </head>
+  <h1>Contact Me</h1>
+  <form action="" class= container>
+   <span>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="userName" />
+   </span>
+
+    <span>
+      <label for="user-email">Your Email:</label>
+      <input
+        type="email"
+        name="userEmail"
+        id="user-email"
+        placeholder="user@example.com"/>
+      </span>
+
+   <span>
+      <label for="phone">Your phone number:</label>
+      <input type="tel" name="userPhone" id="phone" />
+   </span>
+
+   <div class="flex">
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+   </div>
+
+   <div>
+      <input type="submit" value="send message" />
+   </div>
+   <div>
+      <input type="reset" value="clear form" />
+   </div>
+    </span>
 
 
-  <link rel="stylesheet" href="styles.css">
-  <title>Contact Me</title>
-</head>
-<h1>Contact Me</h1>
-<form action="">
-  <label for="name"></label>
-  <input type="text" id="name" name="userName">
-  <label for="user-email">Your Email</label>
-  <input type="email" name="userEmail" id="user-email" placeholder="user@example.com">
-  <label for="phone">Your contact phone number</label>
-  <input type="tel" name="userPhone" id="phone">
-  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <label>What's this message about?
+    </div>
+        <input type="radio" name="subject" value="professional" checked />I'd
+        like to hire you!
+      </div>
 
-  <input type="submit" value="send message">
-
-  <input type="reset" value="clear form">
-
-  <label>What's this message about?
-      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-      <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-  </label>
-</form>
-<body>
-
-</body>
+      <div>
+        <input type="radio" name="subject" value="professional" checked />Personal Message
+      </div>
+      <div>
+        <input type="radio" name="subject" value="professional" checked />I'd
+        like to keep you hanging!
+      </div>
+    </label>
+  </form>
+  <body></body>
 </html>

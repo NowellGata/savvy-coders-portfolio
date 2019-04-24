@@ -1,8 +1,12 @@
 <style>
 
-nav {background-color:powderblue;
+nav {
+    background-color:powderblue;
     font-family: Helvetica;
     font-size: 24px;
+    position: sticky;
+    top: 0;
+
 }
 
 header {font-family:Helvetica;
@@ -124,6 +128,8 @@ ul {
     margin: 0 20px;
     padding: 0px;
 }
+
+
 
 /*Dropdown*/
 

@@ -1,5 +1,10 @@
 <style>
 
+h1 {
+    font-family: 'Cute Font', cursive;
+    font-size: 100px;
+}
+
 html {
     font-family: 'Cute Font', cursive;
 }
@@ -10,11 +15,15 @@ body {
 
 nav {
     background-color:powderblue;
-    font-family: 'cute font';
+    font-family: 'cute-font';
     font-size: 24px;
     position: sticky;
     top: 0;
 
+}
+
+figure {
+    float: left;
 }
 
 header {font-family: 'cute-font', cursive;
@@ -23,7 +32,7 @@ header {font-family: 'cute-font', cursive;
 }
 
 p {text-align: left; width: 550px;
-    font-family: 'Cute Font', cursive;
+    font-family: 'cute-font', cursive;
 }
 
 li {

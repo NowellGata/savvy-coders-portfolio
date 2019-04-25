@@ -1,20 +1,29 @@
 <style>
 
+html {
+    font-family: 'Cute Font', cursive;
+}
+
+body {
+    font-family: 'Cute Font', cursive;
+}
+
 nav {
     background-color:powderblue;
-    font-family: Helvetica;
+    font-family: 'cute font';
     font-size: 24px;
     position: sticky;
     top: 0;
 
 }
 
-header {font-family:Helvetica;
+header {font-family: 'cute-font', cursive;
         height: 200px;
         text-align: center;
 }
 
 p {text-align: left; width: 550px;
+    font-family: 'Cute Font', cursive;
 }
 
 li {
@@ -29,8 +38,6 @@ footer {background-color:royalblue;
 .primary {background-color:cornflowerblue;
 }
 
-.fancybig {font-family: helvetica ; font-size:32px;
-}
 
 #test {
     height: 20vh;

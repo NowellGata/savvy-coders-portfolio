@@ -1,19 +1,48 @@
 <style>
-
+  body {
+  padding-top: 80px;
+  text-align: center;
+  font-family: 'Josefin sans'; sans serif;
+  background: url(https://media.giphy.com/media/NFG00qYw7zkm4/giphy.gif) 50%;
+  background-size: cover;
+  z-index: -1;
+}
+h1, h2 {
+  display: inline-block;
+  background: gray;
+  font-family: 'Josefin sans'; san serif;
+  margin: 20px;
+}
+h1 {
+  font-size: 60px;
+  align-content: right;
+}
+h2 {
+  font-size: 40px;
+}
+span {
+  background: yellow;
+}
+h3 {
+  font-size: 40px;
+  font-family: 'Josefin sans'; sans serif;
+}
 div {
+    /* Center the content horizontally and vertically. */
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
+
+    /* Set width and height as 'percentage' of the viewport/browser window dimensions. */
+    height: 100vw;
+    width: 75vw;
 }
 
 div::after {
-    background: url(https://i.imgur.com/LLtTPj0.jpg) no-repeat center center;
+    background: url(https://media.giphy.com/media/NFG00qYw7zkm4/giphy.gif) no-repeat center center;
     background-size: cover;
-    content: "Barcelona";
-    opacity: 0.25;
+    content: "";
+    opacity: 0.2;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -21,130 +50,7 @@ div::after {
     bottom: 0;
     right: 0;
 }
-
-
-nav {background-color:
-    font-family: helvetica;
-    font-size: 36;
-}
-
-header {
-    font-family: 'Cinzel', serif;
-    font-size: 85px;
-    text-align: center;
-    max-width: 20px
-}
-
-body {
-    background-color: lightslategray;
-}
-
-h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 36px;
-    text-align: center;
-}
-
-figcaption {
-    font-family: helvetica;
-    font-size: 28px;
-    text-align: left;
-}
-
-
-
-footer {
-    font-family:helvetica;
-    text-align: center;
-    font-size: 28px
-}
-
-#test {
-    height: 20vh;
-    width: 80vw;
-    text-align: left;
-}
-section p {
-    font-family:helvetica;
-    text-align: left;
-    font-family: 28px;
-}
-p > span {
-
-}
-span > span {
-
-}
-
-img:nth-child(even) {
-border: solid 3px black;
-}
-img:nth-child(odd) {
-border: solid 3px black;
-}
-.container {
-margin: auto; max-width: 960px; width: 80vw;
-}
-/*Form */
-span + input {
-    margin-left: 15px;
-}
-form span + div {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-textarea {
-    margin-top: 10px;
-}
-input {
-    margin-left: 5px;
-}
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-.flex--column {
-    flex-direction: column;
-}
-form p {
-    margin-bottom: 5px;
-}
-form > div + div {
-    margin-top: 10px;
-}
-
-.dropbtn {
-    background-color: grey;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: wheat;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
+
+
+

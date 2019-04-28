@@ -2,55 +2,40 @@
   body {
   padding-top: 80px;
   text-align: center;
-  font-family: 'Josefin sans'; sans serif;
+  font-family: monaco, monospace;
   background: url(https://media.giphy.com/media/NFG00qYw7zkm4/giphy.gif) 50%;
   background-size: cover;
-  z-index: -1;
 }
 h1, h2 {
   display: inline-block;
-  background: gray;
-  font-family: 'Josefin sans'; san serif;
-  margin: 20px;
+  background: #fff;
 }
 h1 {
-  font-size: 60px;
-  align-content: right;
+  font-size: 30px
 }
 h2 {
-  font-size: 40px;
+  font-size: 20px;
 }
 span {
-  background: yellow;
+  background: #fd0;
 }
 h3 {
-  font-size: 40px;
-  font-family: 'Josefin sans'; sans serif;
+  font-size: 20px;
+  background: white;
+
 }
+
 div {
-    /* Center the content horizontally and vertically. */
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    /* Set width and height as 'percentage' of the viewport/browser window dimensions. */
-    height: 100vw;
-    width: 75vw;
+  width: 100px;
+  height: 100px;
 }
 
-div::after {
-    background: url(https://media.giphy.com/media/NFG00qYw7zkm4/giphy.gif) no-repeat center center;
-    background-size: cover;
-    content: "";
-    opacity: 0.2;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+img {
+  max-width: 400px;
+  max-height: 200px;
+  align-content: center;
+  boder: 20px;
+  z-index: 1;
 }
+
 </style>
-
-
-

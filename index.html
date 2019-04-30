@@ -239,19 +239,17 @@
   //Capture user input into a variable
   //Use Alert to say Hello to the user, using the name they put in
   <script>
-    var name = prompt('What is your name?');
+    let name = prompt('What is your name?');
 
-var checkName = function(){
-    if(name === ''){
-        name = prompt('What is your name, for real this time?');
-
-        checkName(); // repeats until a name exists
+//Check if name is a 'blank' string
+    if (name === "") {
+      name = prompt('Really, what is your name?')
     }
-};
 
-checkName(); // kicks off the name-checking the first time
 
-alert('Hello ' + name);
+      alert(`Hello ${name}! What is for dinner??`);
+
+
 
   </script>
 

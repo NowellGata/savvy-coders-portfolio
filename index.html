@@ -224,7 +224,10 @@
           </div>
         </div><!--/.row-->
       </div><!--/.container-->
-      <div class="container hidden-sm hidden-xs"><div class="spacer"></div><div class="spacer"></div><footer><p class="pull-right">&copy;Nolerama2019</p></footer></div>
+      <div class="container hidden-sm hidden-xs"><div class="spacer"></div><div class="spacer">
+
+      </div>
+      <footer><p class="pull-right">&copy;Nolerama2019</p></footer></div>
     </div><!--/.work-together-->
 
 
@@ -232,6 +235,25 @@
   </div><!--/.page-wrap-->
 
 
+  //Create a prompt to ask for name
+  //Capture user input into a variable
+  //Use Alert to say Hello to the user, using the name they put in
+  <script>
+    var name = prompt('What is your name?');
+
+var checkName = function(){
+    if(name === ''){
+        name = prompt('What is your name, for real this time?');
+
+        checkName(); // repeats until a name exists
+    }
+};
+
+checkName(); // kicks off the name-checking the first time
+
+alert('Hello ' + name);
+
+  </script>
 
 </body>
 </html>

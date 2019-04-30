@@ -235,22 +235,21 @@
   </div><!--/.page-wrap-->
 
 
-  //Create a prompt to ask for name
-  //Capture user input into a variable
-  //Use Alert to say Hello to the user, using the name they put in
+//Create a prompt to ask for name
+//Capture user input into a variable
+//Use Alert to say Hello to the user, using the name they put in
   <script>
     let name = prompt('What is your name?');
-
 //Check if name is a 'blank' string
-    if (name === "") {
+//REFACTOR the 'error check' into a 'function'
+    function checkname() {
+      if (name === "") {
       name = prompt('Really, what is your name?')
     }
+  }
 
-
+    checkname()
       alert(`Hello ${name}! What is for dinner??`);
-
-
-
   </script>
 
 </body>

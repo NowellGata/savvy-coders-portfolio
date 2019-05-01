@@ -245,13 +245,19 @@
     function checkName(name) {
       if (name === "") {
         name = prompt("Really, what is your name?");
-    }
+//Notice that the returned name will be returned from the final ALERT
+        name = checkName(name);
+
+      }
+//RECURSION - Fxn. calls itself again
+
     return name;
-  }
+    }
+  //let checkName = function()
+  name = checkName(name);
 //We capture what is RETURNED by CHECKNAME and overwrite NAME with that value
-    name = checkName(name);
+
 //This is a Function Expression
-//let checkName = function()
     alert(`Hello ${name}! What is for dinner??`);
 
 </script>

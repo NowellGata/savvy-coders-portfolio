@@ -242,21 +242,19 @@
 //REFACTOR the 'error check' into a 'function'
 //This is a Function Declaration
 //Normally, we can avoid using the same name for a LOCAL parameter as a GLOBAL VARIABLE
-    function checkName(someName) {
-    if (name === "") {
-      name = prompt("Really, what is your name?");
+    function checkName(name) {
+      if (name === "") {
+        name = prompt("Really, what is your name?");
     }
+    return name;
   }
+//We capture what is RETURNED by CHECKNAME and overwrite NAME with that value
+    name = checkName(name);
 //This is a Function Expression
-//let checkName = function(){
-    checkName(name); {
-    }
+//let checkName = function()
+    alert(`Hello ${name}! What is for dinner??`);
 
-    alert(`Hello ${name}! What is for dinner??`);{
-
-    }
-
-  </script>
+</script>
 
 </body>
 </html>

@@ -232,33 +232,18 @@
   </div><!--/.page-wrap-->
 
 
-//Create a prompt to ask for name
-//Capture user input into a variable
-//Use Alert to say Hello to the user, using the name they put in
   <script>
-//'name' is a here as a GLOBAL VARIABLE
-    let name = prompt("What is your name?");
-//Check if name is a 'blank' string
-//REFACTOR the 'error check' into a 'function'
-//This is a Function Declaration
-//Normally, we can avoid using the same name for a LOCAL parameter as a GLOBAL VARIABLE
-    function checkName(name) {
-      if (name === "") {
+
+  let name = prompt("What is your name?");
+  function checkName(name) {
+  if (name === "") {
         name = prompt("Really, what is your name?");
-//Notice that the returned name will be returned from the final ALERT
         name = checkName(name);
-
       }
-//RECURSION - Fxn. calls itself again
-
-    return name;
+  return name;
     }
-  //let checkName = function()
   name = checkName(name);
-//We capture what is RETURNED by CHECKNAME and overwrite NAME with that value
-
-//This is a Function Expression
-    alert(`Hello ${name}! What is for dinner??`);
+  alert(`Hello ${name}! What is for dinner??`);
 
 </script>
 

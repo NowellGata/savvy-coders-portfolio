@@ -236,22 +236,22 @@
 //Capture user input into a variable
 //Use Alert to say Hello to the user, using the name they put in
   <script>
-    //'name' is a here as a GLOBAL VARIABLE
-    let name = prompt('What is your name?');
+//'name' is a here as a GLOBAL VARIABLE
+    let name = prompt("What is your name?");
 //Check if name is a 'blank' string
 //REFACTOR the 'error check' into a 'function'
 //This is a Function Declaration
-      function checkName() {
-      if (name === "") {
-      name = prompt('Really, what is your name?');
+//Normally, we can avoid using the same name for a LOCAL parameter as a GLOBAL VARIABLE
+    function checkName(someName) {
+    if (name === "") {
+      name = prompt("Really, what is your name?");
     }
   }
 //This is a Function Expression
 //let checkName = function(){
+    checkName(name); {
     }
-    checkName(); {
 
-    }
     alert(`Hello ${name}! What is for dinner??`);{
 
     }

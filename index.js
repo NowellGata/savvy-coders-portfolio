@@ -14,5 +14,6 @@ function checkName(name){
 name = checkName(name);
 alert(`Hello ${name}! What is for dinner??`);
 
-document.querySelector('h1').textContent = 'Hello ' + name;
+document.querySelector('#greeting').innerHTML = `<p>${name}`;
+
 

@@ -22,41 +22,89 @@ h2 {
 
 h3 {
   font-family: 'Exo', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
-img {
+
+p{
+  margin: 100px;
+	font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    background-color: slategray ;
+    padding: 100px;
+ }
+
+label {
+  font-family: 'Exo', sans-serif;
+  font-size: 12px;
+  display: flex;
+}
+
+input {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  display: inline-block;
+}
+.checkers {
+  text-align: center;
+}
+
+.nole {
     float: left;
+    margin:20px;
     padding: 5px;
     border-width: 10px;
     background-color: black;
     border: 5px, solid, black;
-    }
-
-p {
-	font-family: Arial, sans-serif;
-    font-size: 18px;
-    text-align: left;
-    background-color: slategray ;
-    padding: 10px;
- }
-
+}
 
 .column {
 
   padding: 5px;
-  max-width: 10px;
+  width: 150px;
 
-  }
+}
 
-  .line {
+.line {
     width: 80%;
 height: 8px;
 margin-left: auto;
 margin-right: auto;
-background-color:#666;
+background-color: darkgray;
 border: 0 none;
 margin-top: 100px;
 margin-bottom:100px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  border: 20px;
+}
+
+
+
+.hackathon, .savvy, .guerrilla {
+  margin: 20px;
+  padding: 20px;
+  height: 200px;
+}
+
+.consult, .savvycoders, .classroom {
+text-align: left;
+font-size: 18px;
+font-family: 'Exo', sans-serif;
+}
+
+
+
+.copyright {
+  text-align: center;
+  font size: 10px;
+  background-color: slategray;
 }

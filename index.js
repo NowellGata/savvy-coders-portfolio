@@ -13,5 +13,5 @@ document.body.innerHTML = `
   ${Navigation}
   ${Header}
   ${Main}
-    ${initialHTML}
+  ${initialHTML}
   `;

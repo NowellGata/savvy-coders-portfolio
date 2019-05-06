@@ -1,3 +1,29 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orange;
+}
+
+li {
+  float: left;
+  font-family: "Raleway", sans-serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightgray;
+}
+
+
  body {
   background-color: lightgray;
   border: 20px solid white;
@@ -7,60 +33,61 @@
 }
 
 h1 {
-   	font-family: 'Exo', sans-serif;
+   	font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 100px;
+    color: lightgray;
     background-color: slategray;
 
 }
 
 h2 {
-	font-family: Arial, sans-serif;
+	font-family: "Raleway", sans-serif;
     text-align: center;
     font-size:40px;
 }
 
 h3 {
   font-family: 'Exo', sans-serif;
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 
 
-p{
+p {
   margin: 100px;
-	font-family: 'Exo', sans-serif;
-    font-size: 18px;
-    text-align: left;
-    background-color: slategray ;
-    padding: 100px;
+	font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  background-color: slategray;
+  padding: 100px;
  }
 
 label {
   font-family: 'Exo', sans-serif;
   font-size: 12px;
   display: flex;
+  color: slategray;
 }
 
-input {
-  text-align: center;
+
+input, form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-form {
-  text-align: center;
-  display: inline-block;
-}
 .checkers {
   text-align: center;
 }
 
 .nole {
-    float: left;
-    margin:20px;
-    padding: 5px;
-    border-width: 10px;
-    background-color: black;
-    border: 5px, solid, black;
+  float: left;
+  margin:20px;
+  padding: 5px;
+  border-width: 10px;
+  background-color: black;
+  border: 5px, solid, black;
 }
 
 .column {
@@ -71,37 +98,50 @@ form {
 }
 
 .line {
-    width: 80%;
-height: 8px;
-margin-left: auto;
-margin-right: auto;
-background-color: darkgray;
-border: 0 none;
-margin-top: 100px;
-margin-bottom:100px;
+  width: 80%;
+  height: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border: 0 none;
+  margin-top: 100px;
+  margin-bottom:100px;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: row, center;
+  background-color: slategray;
+  color: whitesmoke;
+
 }
 
 .flex-container {
   display: flex;
-  flex-direction: column;
-  border: 20px;
+  flex-direction: row, center;
+  border: 30px;
+  max-width: 80%;
+  background-color: whitesmoke;
 }
 
-
-
 .hackathon, .savvy, .guerrilla {
-  margin: 20px;
+  margin: 40px;
   padding: 20px;
-  height: 200px;
+  max-height: 100%;
+  width: 200px;
+  font-family: 'Exo', sans-serif;
+  display: center;
+  flex-direction: column;
 }
 
 .consult, .savvycoders, .classroom {
-text-align: left;
-font-size: 18px;
-font-family: 'Exo', sans-serif;
+  text-align:center;
+  font-size: 18px;
+  font-family: 'Exo', sans-serif;
+  color: black;
+  display: flex, center;
+  flex-direction: column;
 }
-
-
 
 .copyright {
   text-align: center;

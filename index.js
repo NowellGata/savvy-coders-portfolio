@@ -5,13 +5,10 @@ import Main from './components/Main';
 // import ContentTwo from './Components/Navigation';
 // import Footer from './Components/Footer';
 
-// Use innerHTML property as a GETTER
-let initialHTML = document.body.innerHTML;
 
 // Use innerHTML property as a SETTER
-document.body.innerHTML = `
+document.querySelector('#root').innerHTML = `
   ${Navigation}
   ${Header}
   ${Main}
-  ${initialHTML}
-  `;
+    `;

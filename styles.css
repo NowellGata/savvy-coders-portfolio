@@ -74,7 +74,7 @@ label {
 input, form {
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .checkers {
@@ -110,17 +110,17 @@ input, form {
 
 .inputbox {
   display: flex;
-  flex-direction: row, center;
+  justify-content: center;
   background-color: slategray;
-  color: whitesmoke;
+  color: white;
 
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row, center;
+  justify-content: center;
   border: 30px;
-  max-width: 80%;
+  max-width: 100%;
   background-color: whitesmoke;
 }
 
@@ -139,8 +139,8 @@ input, form {
   font-size: 18px;
   font-family: 'Exo', sans-serif;
   color: black;
-  display: flex, center;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .copyright {

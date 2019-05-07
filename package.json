@@ -1,12 +1,11 @@
 {
   "name": "NowellGata",
   "version": "1.0.0",
-  "description": "",
+  "description": "Welcome to my portfolio. Have a look around.",
   "main": "index.js",
   "scripts": {
-
     "build": "parcel build index.html && cp _redirects ./dist/",
-    "test": "echo  \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NowellGata/savvy-coders-portfolio/issues"
+    "url": "https://github.com/NowelltGata/savvy-coders-portfolio/issues"
   },
   "homepage": "https://github.com/NowellGata/savvy-coders-portfolio#readme",
   "devDependencies": {

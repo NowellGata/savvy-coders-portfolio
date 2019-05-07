@@ -1,4 +1,4 @@
-export default function Navigation(title){
+export default function Navigation(state){
     return `
 <nav class="main-nav" id="main-nav">
 

@@ -1,5 +1,6 @@
 export default function Content(state){
-return ' <main>
+return '
+<main>
 <body>
 <h1>${state.title}</h1>
         <h2>aspiring developer + chef + talent acquisition</h2>

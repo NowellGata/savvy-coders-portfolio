@@ -1,5 +1,5 @@
 export default function Content(state){
-return '
+    return `
 <main>
 <body>
 <h1>${state.title}</h1>
@@ -84,5 +84,5 @@ return '
 <footer><div class="copyright">&copy2019 Nowell Gata</div>
 </footer>
 
-</main>'';
+</main>`;
 }

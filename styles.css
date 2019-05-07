@@ -2,7 +2,7 @@
   body {
     /* Establish a grid. */
     display: grid;
-
+  }
     /* Set up 2 columns - first is a width of 12rems, the other is decided by the browser. */
     grid-template-columns: 12rem auto;
     grid-template-rows: min-content auto auto min-content;

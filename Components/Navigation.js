@@ -1,4 +1,6 @@
-export default `<nav class="main-nav" id="main-nav">
+export default function Navigation(){
+    return `
+<nav class="main-nav" id="main-nav">
 
 <nav>
   <ul>
@@ -9,3 +11,4 @@ export default `<nav class="main-nav" id="main-nav">
   </ul>
 
 </nav>`;
+}

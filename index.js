@@ -5,10 +5,13 @@ import Main from './components/Main';
 // import ContentTwo from './components/Navigation';
 // import Footer from './components/Footer';
 
+console.log('Navigation says: 'Navigation);
+console.log('Navigation() says:' Navigation());
+
 
 // Use innerHTML property as a SETTER
 document.querySelector('#root').innerHTML = `
-  ${Navigation}
-  ${Header}
-  ${Main}
+  ${Navigation()}
+  ${Header()}
+  ${Main()}
     `;

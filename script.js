@@ -1,9 +1,9 @@
 
 <script type="text/javascript" src="index.js">
 
-var name = prompt('What is your name?');
+let name = prompt('What is your name?');
 
-var checkName = function(){
+let checkName = function(){
     if(name === ''){
         name = prompt('What is your name, for real this time?');
 

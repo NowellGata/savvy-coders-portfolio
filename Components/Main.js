@@ -1,4 +1,5 @@
-export default ` <main>
+export default function Content(){
+return ' <main>
 <body>
 <h1>NOWELL GATA</h1>
         <h2>aspiring developer + chef + talent acquisition</h2>
@@ -82,4 +83,5 @@ export default ` <main>
 <footer><div class="copyright">&copy2019 Nowell Gata</div>
 </footer>
 
-</main>`;
+</main>'';
+}

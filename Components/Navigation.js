@@ -1,6 +1,6 @@
-export default function Navigation(state){
+export default function Navigation(){
     return `
-<nav class="main-nav" id="main-nav">
+<nav class="main-nav">
 
   <ul>
     <li><a href="default.asp">Home</a></li>

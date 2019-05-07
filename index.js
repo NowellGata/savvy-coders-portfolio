@@ -6,7 +6,7 @@ import Main from './components/Main';
 
 const state = {};
 
-state.title = 'Some Title';
+state.title = 'Nowell Gata';
 
 // Use innerHTML property as a SETTER
 document.querySelector('#root').innerHTML =

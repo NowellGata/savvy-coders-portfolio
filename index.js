@@ -15,3 +15,14 @@ document.querySelector('#root').innerHTML =
   ${Header(state)}
   ${Main(state)}
     `;
+
+// Create click event handlers that will respond when we click on one of our navigation elements
+
+function navHello(hello){
+    console.log(`hiya from ${hello}`);
+}
+
+document.querySelector('nav a').addEventListener('click', (event) => {
+    console.log(event.target.textcontent);
+    navHello('clicky click');
+});

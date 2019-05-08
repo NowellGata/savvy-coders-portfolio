@@ -3,10 +3,10 @@ export default function Navigation(){
 <nav class="main-nav">
 
   <ul>
-    <li><a href="default.asp">Home</a></li>
-    <li><a href="news.asp">Portfolio</a></li>
-    <li><a href="contact.asp">Photos</a></li>
-    <li><a href="about.asp">Resume</a></li>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./portfolio.html">Portfolio</a></li>
+    <li><a href="./photos.html">Photos</a></li>
+    <li><a href="./about.html">Resume</a></li>
   </ul>
 
 </nav>`;

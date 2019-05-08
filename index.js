@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
+import { type } from 'os';
 
 // State is an Object Literal that will hold information that functional components to properly render
 
@@ -16,13 +17,3 @@ document.querySelector('#root').innerHTML =
   ${Main(state)}
     `;
 
-// Create click event handlers that will respond when we click on one of our navigation elements
-
-function navHello(hello){
-    console.log(`hiya from ${hello}`);
-}
-
-document.querySelector('nav a').addEventListener('click', (event) => {
-    console.log(event.target.textcontent);
-    navHello('clicky click');
-});

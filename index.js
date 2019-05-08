@@ -1,9 +1,6 @@
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
-import { type } from 'os';
-
-// State is an Object Literal that will hold information that functional components to properly render
 
 const state = {};
 

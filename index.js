@@ -1,12 +1,27 @@
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
+// Nest states
 
-const state = {};
-const home = {
-  'title': "Domo Arigato Mr. Roboto!";
-}
 state.title = 'Nowell Gata';
+
+const states = {
+    'home': {
+    }
+
+};
+const home = {
+    'title': 'HOLA'
+};
+
+const contact = {
+    'title': 'Welcome to my contact page'
+};
+
+const about = {
+    'title': 'Welcome to about page'
+};
+
 
 // Use innerHTML property as a SETTER
 const root = document.querySelector('#root');
@@ -14,13 +29,21 @@ const root = document.querySelector('#root');
 
 
 // Render receives an ARGUMENT as a NAMED PARAMETER, 'State'
-function render(state) {
-  root.innerHTML = `
+function render(state){
+    root.innerHTML = `
   ${Navigation(state)}
   ${Header(state)}
   ${Main(state)}
     `;
-
 }
 
 render(home);
+
+const links = document.querySelectorAll('nav a');
+
+links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        render(states[`${e.target.textContent.toLowerCase()}`]);
+    });
+});

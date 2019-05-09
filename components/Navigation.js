@@ -5,7 +5,7 @@ export default function Navigation(){
   <ul>
     <li><a href="./index.html">Home</a></li>
     <li><a href="./portfolio.html">Portfolio</a></li>
-    <li><a href="./photos.html">Photos</a></li>
+    <li><a href="https://imgur.com/user/Nolerama/">Photos</a></li>
     <li><a href="./about.html">Resume</a></li>
   </ul>
 

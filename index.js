@@ -1,22 +1,26 @@
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 // Nest states
 
 state.title = 'Nowell Gata';
 
 const states = {
     'home': {
+        'title': 'Welcome to my Savvy Portfolio!'
+        'image': image
+        'links': ['Home', 'About', 'Contact' ]
     }
-
 };
-const home = {
-    'title': 'HOLA'
+    'about': {
+    'title': 'About Me'
+    'links': ['Home', 'About', 'Contact' ]
 };
 
-const contact = {
-    'title': 'Welcome to my contact page'
+    'contact': {
+    'title': 'Contact Me'
+    'links': ['Home', 'About', 'Contact' ]
 };
 
 const about = {

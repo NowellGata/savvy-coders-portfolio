@@ -12,17 +12,17 @@ function buildNavHTML(stateLinks) {
 }
 
 export default (state) => `<nav>
-  <ul class="flex">
-      ${buildNavHTML(state.links)}
-      <li>Portfolio
-      <ul = "dropdown>
-      <li><a href="class.html">Class</a></li>
-      <li><a href="web-store.html">Web Store</a></li>
-      <li><a href="demo.html">Demo Day</a></li>
+      <ul class="flex">
+          ${buildNavHTML(state.links)}
+            <li>Portfolio
+              <ul = "dropdown>
+                  <li><a href="class.html">Class</a></li>
+                  <li><a href="web-store.html">Web Store</a></li>
+                  <li><a href="demo.html">Demo Day</a></li>
 
-  </ul>
-  </li>
-  </ul>
+              </ul>
+            </li>
+      </ul>
 </nav>`;
 
 }

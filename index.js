@@ -9,9 +9,12 @@ state.title = 'Nowell Gata';
 const states = {
     'home': {
         'title': 'Welcome to my Savvy Portfolio!'
-        'image': image
-        'links': ['Home', 'About', 'Contact' ]
-    }
+        'image': img,
+        'links': {
+            'primary': ['Home', 'About', 'Contact' ],
+            'dropdown': ['Class', 'Project', 'Hack-a-Thon','Demo Day']
+    },
+
 };
     'about': {
     'title': 'About Me'

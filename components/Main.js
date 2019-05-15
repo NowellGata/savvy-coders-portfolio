@@ -80,9 +80,6 @@ export default function Content(state){
         </form>
 </body>
 
-<div class="line"></div>
-<footer><div class="copyright">&copy2019 Nowell Gata</div>
-</footer>
 
 </main>`;
 }

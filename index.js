@@ -51,7 +51,11 @@ const links = document.querySelectorAll('nav a');
 
 links.forEach((link) => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        render(states[`${e.target.textContent.toLowerCase()}`]);
+				e.preventDefault();
+
+				console.log(e);
+
+				render(states[`${e.target.textContent.toLowerCase()}`]);
+
     });
 });

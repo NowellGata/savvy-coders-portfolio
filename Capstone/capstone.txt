@@ -1,0 +1,9 @@
+Nowell Gata
+Savvy Coders Capstone Project
+Name: ResON
+Mission Statement: I want to create a web application that provides real-time restaurant reservation openings to users and business owners using a live map (geolocation api?) and requesting real-time financial accountability if that reservation is NOT met. 
+Audience: Hungry, undecided potential restaurant clients that are looking for someplace near them looking for an open reservation. Alternatively, restaurant owners that want to see opted-in customers in real-time and invite them to fill in an empty reservation.
+
+Narrative: Every restaurant, from the neighborhood bistro to the best fine dining establishment in the world has the unfortunate problem of a reservation cancellation. Over time, this can cause severe operational and production issues. As a chef, I have seen a reservation books meet only 75% of reserved guests, with the uncontrollable hope that a walk in customer arrives to fill that spot.
+Why have a restaurant seated at 75%? Why wait on the chaos of potential walk-in customers?
+This simple app should provide a robust, accountable way in which potential guests and businesses can find real-time reservations, focusing on committed diners who want a dining experience near-to-NOW.

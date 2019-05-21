@@ -10,7 +10,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "workbench.enableExperiments": false,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Night Owl",
     "workbench.iconTheme": "vs-seti",
     "workbench.view.alwaysShowHeaderActions": true,
     "terminal.integrated.fontFamily": "'Inconsolata', monospace",

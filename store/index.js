@@ -19,12 +19,15 @@ function render(state){
   ${Footer(state)}
   `;
 
+    router updatePageLinks(){
+
+    }
     const links = document.querySelectorAll('nav a');
 
-    links.forEach((link) => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            render(states[`${e.target.textContent}`]);
+    // links.forEach((link) => {
+        // link.addEventListener('click', (e) => {
+         //   e.preventDefault();
+           // render(states[`${e.target.textContent}`]);
         });
     });
 }

@@ -15,7 +15,7 @@ function buildNavHTML(stateLinks) {
   const linksHTML = '';
 
   stateLinks.forEach((link) => {
-    linksHTML += `<li><a href="">${buildIconHTML(link)} ${link.text}</a></li>`;
+    linksHTML += `<li><a href="/${link.text.toLowerCase()}" data-navigo> ${buildIconHTML(link)} ${link.text}</a></li>`;
   });
 
   return linksHTML;

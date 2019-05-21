@@ -1,9 +1,30 @@
 
-//* Grab whatever Home.js is exporting by default *//
+import Navigation from './components/Navigation';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
-export { default as Home} from './Home';
-export { default as Contact} from './Contact';
-export { default as About} from './About';
+import * as states from './store';
 
-${Navigation(state)}
-${Content(state)}
+// Use innerHTML property as a SETTER
+const root = document.querySelector('#root');
+
+// render receives an argument as a named parameter: 'state'
+function render(state){
+    // TODO: Use Shadow DOM and Virtual DOM 'diffing' to avoid re-rendering ALL of the components
+    root.innerHTML = `
+  ${Navigation(state)}
+  ${Content(state)}
+  ${Footer(state)}
+  `;
+
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            render(states[`${e.target.textContent}`]);
+        });
+    });
+}
+
+render(states.Home);

@@ -2,9 +2,8 @@
 import Navigation from './components/Navigation';
 import Content from './components/Content';
 import Footer from './components/Footer';
-
 import * as states from './store';
-
+import { capitalize } from 'lodash';
 import Navigo from 'navigo';
 const router = new Navigo(window.location.origin);
 
@@ -28,6 +27,10 @@ function render(state){
             render(states[`${e.target.textContent}`]);
         });
     });
+}
+
+function handleRoutes(params){
+    render(states[capitalize(params.path)]);
 }
 
 router

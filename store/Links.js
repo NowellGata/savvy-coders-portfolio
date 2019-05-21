@@ -1,8 +1,8 @@
-import img from `../img/sample.jpeg`;
+export default 
+{
+    'primary': [
+      {'text':'Home','icon': 'fas fa-home'}, {'text': 'About', 'icon': 'fas fa-id-card-alt' }, {'text': 'Contact', 'icon': 'fas fa-phone'} ],
+    'dropdown': [ {'text': 'Class Project'} ,{'text': 'Hackathon'} ,{'text': 'Demo Day'} ]
+};
 
-export default {
 
-    'primary': ['Home', 'About', 'Contact' ],
-    'dropdown': ['Class Project', 'Hackathon', 'Demo Day']
-  }
-}

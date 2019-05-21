@@ -5,6 +5,9 @@ import Footer from './components/Footer';
 
 import * as states from './store';
 
+import Navigo from 'navigo';
+const router = new Navigo(window.location.origin);
+
 // Use innerHTML property as a SETTER
 const root = document.querySelector('#root');
 
@@ -27,4 +30,7 @@ function render(state){
     });
 }
 
-render(states.Home);
+router
+    .on(':path', (params) => console.log(params.path))
+    .on('/', () => (render(states.Home)))
+    .resolve();

@@ -2,16 +2,18 @@
 // It should iterate and generate the '<li>' that we need to build out the links.
 // It should return for use inside the functional component, which generates the full markup
 
-function buildIconHTML(link)  {
+//function buildNavHTML(stateLinks)  {
+ // let linksHTML = '';
 
-  if(link.icon){
-      return `<span class="${link.icon}"></span>`;
-  }
-      return '';
 
-}
+ // if(link.icon){
+  //    return `<span class="${link.icon}"></span>`;
+ // }
+ //     return '';
 
-function buildNavHTML(stateLinks) {
+//}
+
+function buildNavHTML(stateLinks){
   const linksHTML = '';
 
   stateLinks.forEach((link) => {

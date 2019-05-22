@@ -1,6 +1,9 @@
-export default (state) {
+//export default function() {
+ // return ``
+//}
 
-<div class="line">
+export default
+  div class="line">
 </div>
   <footer>
     <div class="copyright">&copy2019 Nowell Gata

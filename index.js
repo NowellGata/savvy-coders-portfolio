@@ -9,6 +9,7 @@ const router = new Navigo(window.location.origin);
 // Use innerHTML property as a SETTER
 const root = document.querySelector('#root');
 // render receives an argument as a named parameter: 'state'
+
 function render(state){
     // TODO: Use Shadow DOM and Virtual DOM 'diffing' to avoid re-rendering ALL of the components
     root.innerHTML = `
@@ -17,19 +18,19 @@ function render(state){
   ${Footer(state)}
   `;
 
-    router updatePageLinks();
-
+    router.updatePageLinks();
 }
 
-    const links = document.querySelectorAll('nav a');
 
-    // links.forEach((link) => {
-        // link.addEventListener('click', (e) => {
-         //   e.preventDefault();
-           // render(states[`${e.target.textContent}`]);
-       // });
-   // });
-//}
+const links = document.querySelectorAll('nav a');
+
+// links.forEach((link) => {
+// link.addEventListener('click', (e) => {
+//   e.preventDefault();
+// render(states[`${e.target.textContent}`]);
+// });
+// });
+// }
 
 function handleRoutes(params){
     render(states[capitalize(params.path)]);

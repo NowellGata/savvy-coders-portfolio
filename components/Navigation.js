@@ -1,17 +1,8 @@
-// buildNavHTML should take the links, which is an Array
-// It should iterate and generate the '<li>' that we need to build out the links.
-// It should return for use inside the functional component, which generates the full markup
-
-// function buildNavHTML(stateLinks)  {
-// let linksHTML = '';
-
-
-// if(link.icon){
-//    return `<span class="${link.icon}"></span>`;
-// }
-//     return '';
-
-// }
+function buildIconHTML(link){
+    if(link.icon){
+        return `<span class="${link.icon}"></span>`;
+    }
+}
 
 function buildNavHTML(stateLinks){
     let linksHTML = '';
@@ -28,7 +19,10 @@ function buildNavHTML(stateLinks){
     return linksHTML;
 }
 
-export default (state) => `
+export default (state) => {
+    console.log('Navigation has this state', state);
+
+    return `
   <nav class= "navbar">
     <ul class="flex">
       ${buildNavHTML(state.links.primary)}
@@ -40,14 +34,4 @@ export default (state) => `
       </li>
     </ul>
 </nav>`;
-// <nav class="navbar">
-// <ul>
-//  <li><a href="./index.html">Home</a></li>
-// <li><a href="./portfolio.html">Portfolio</a></li>
-// <li><a href="./photos.html">Photos</a></li>
-// <li><a href="./about.html">Resume</a></li>
-// </ul>
-
-// </nav>
-
-
+};

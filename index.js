@@ -1,6 +1,4 @@
-
 import Navigation from './components/Navigation';
-import Head from `./components/Head;`
 import Content from './components/Content';
 import Footer from './components/Footer';
 
@@ -25,12 +23,10 @@ function render(state){
     router.updatePageLinks();
 }
 
-function handleRoutes(params){
+function handleRoutes(params){}
 
-}
-
-router
-    .on(':path', (params) => {
+router.on(':path', (params) =>
     render(states[capitalize(params.path)])
-    .on('/', () => (render(states.Home)))
-    .resolve();
+        .on('/', () => render(states.Home))
+        .resolve()
+);

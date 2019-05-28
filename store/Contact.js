@@ -1,7 +1,7 @@
 import links from './Links';
 
 export default {
-    'pageContent': 'Home',
+    'pageContent': 'Contact',
     'title': 'Contact Me',
     'links': links
 };

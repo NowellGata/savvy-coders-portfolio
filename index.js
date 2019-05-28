@@ -4,7 +4,7 @@ import Head from `./components/Head;`
 import Content from './components/Content';
 import Footer from './components/Footer';
 
-import * as states from './components/Index';
+import * as states from './store';
 
 import { capitalize } from 'lodash';
 

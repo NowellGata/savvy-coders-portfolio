@@ -2,7 +2,7 @@
 import Navigation from './components/Navigation';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import * as states from './store';
+import * as states from './components/Index';
 import { capitalize } from 'lodash';
 import Navigo from 'navigo';
 const router = new Navigo(window.location.origin);
@@ -20,8 +20,6 @@ function render(state){
 
     router.updatePageLinks();
 }
-
-
 const links = document.querySelectorAll('nav a');
 
 // links.forEach((link) => {

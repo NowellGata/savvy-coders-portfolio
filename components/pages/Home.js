@@ -1,5 +1,6 @@
-export default (state) => `<header>
-<h1>${state.title}</h1>
+export default (state) =>
+    `<header>
+<h1> ${state.title}</h1>
 <h2>aspiring developer + chef + talent acquisition</h2></header>
 <h3>
   “You're always you, and that don't change, and you're always changing,
@@ -75,4 +76,4 @@ export default (state) => `<header>
     </div>
   </label>
 </form>
-
+`;

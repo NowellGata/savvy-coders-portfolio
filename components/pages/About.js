@@ -1,2 +1,2 @@
-export default `<h1>About Me!</h1>
-    <p>Stop being so NOSY!</p>;`
+export default (state) => `<h1>${state.title}</h1>
+    <p>Stop being so NOSY!</p>;`;

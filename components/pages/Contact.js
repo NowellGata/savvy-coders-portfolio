@@ -1,5 +1,5 @@
 export default (state) => `
-<h1>${state}</h1>
+<h1>${state.title}</h1>
 <form action="https://formspree.io/nowell.gata@gmail.com" method="POST">
  <span>
     <label for="name">Your Name:</label>

@@ -1,9 +1,13 @@
 
 import Navigation from './components/Navigation';
+import Head from `./components/Head;`
 import Content from './components/Content';
 import Footer from './components/Footer';
+
 import * as states from './components/Index';
+
 import { capitalize } from 'lodash';
+
 import Navigo from 'navigo';
 const router = new Navigo(window.location.origin);
 // Use innerHTML property as a SETTER
@@ -20,21 +24,13 @@ function render(state){
 
     router.updatePageLinks();
 }
-const links = document.querySelectorAll('nav a');
-
-// links.forEach((link) => {
-// link.addEventListener('click', (e) => {
-//   e.preventDefault();
-// render(states[`${e.target.textContent}`]);
-// });
-// });
-// }
 
 function handleRoutes(params){
-    render(states[capitalize(params.path)]);
+
 }
 
 router
-    .on(':path', (params) => console.log(params.path))
+    .on(':path', (params) => {
+    render(states[capitalize(params.path)])
     .on('/', () => (render(states.Home)))
     .resolve();

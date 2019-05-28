@@ -1,5 +1,7 @@
 export default function Content(state){
     return `
+
+
 <main>
 <body>
 <h1>${state.title}</h1>

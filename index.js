@@ -25,8 +25,9 @@ function render(state){
 
 function handleRoutes(params){}
 
-router.on(':path', (params) =>
-    render(states[capitalize(params.path)])
-        .on('/', () => render(states.Home))
-        .resolve()
-);
+router
+    .on(':path', (params) => {
+        render(states[capitalize(params.path)]);
+    })
+    .on('/', () => render(states.Home))
+    .resolve();

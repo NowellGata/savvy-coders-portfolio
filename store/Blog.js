@@ -1,7 +1,8 @@
 import links from './Links';
 
 export default {
-    'pageContent': 'Home',
-    'title': 'Welcome to Savvy Portfolio',
+    'pageContent': 'Blog',
+    'title': 'Daaaa Blog',
     'links': links
+    'posts': []
 };

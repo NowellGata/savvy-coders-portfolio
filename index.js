@@ -31,3 +31,11 @@ router
     })
     .on('/', () => render(states.Home))
     .resolve();
+
+
+// Fetch returns a Promise that contains a RESPONSE Object
+// Common structure when using FETCH
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+

@@ -2,7 +2,7 @@ export default {
     'primary': [
         { 'text': 'Home',    'icon': 'fas fa-home' },
         { 'text': 'About',   'icon': 'fas fa-id-card-alt' },
-        { 'text': 'Contact', 'icon': 'fas fa-phone' } ],
+        { 'text': 'Contact', 'icon': 'fas fa-phone' }, { "text": Blog } ],
     'dropdown': [
         { 'text': 'Class Project' } ,{ 'text': 'Hackathon' } ,{ 'text': 'Demo Day' } ]
 };

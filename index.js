@@ -7,6 +7,9 @@ import * as states from './store';
 import { capitalize } from 'lodash';
 
 import Navigo from 'navigo';
+// axios is NOT a a fxn. constructor
+import axios from 'axios';
+
 const router = new Navigo(window.location.origin);
 // Use innerHTML property as a SETTER
 const root = document.querySelector('#root');
@@ -32,10 +35,22 @@ router
     .on('/', () => render(states.Home))
     .resolve();
 
-
 // Fetch returns a Promise that contains a RESPONSE Object
 // Common structure when using FETCH
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => console.log(json));
 
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    // After CALL STACK is all empty, JS can execute the 'then' to 'unwrap' the Promise
+    .then((response) => {
+    // 'response.data' is an Array of 'Post' Objects
+    // We need to get this into states.Blog.posts.
+        response.data.forEach((post) => states.Blog.posts.push(post));
+        // console.log('After forEach', states);
+        render(states.Home);
+    });
+
+
+console.log('I am after axios!');

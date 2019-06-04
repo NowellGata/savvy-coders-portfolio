@@ -49,7 +49,10 @@ axios
     // We need to get this into states.Blog.posts.
         response.data.forEach((post) => states.Blog.posts.push(post));
         // console.log('After forEach', states);
-        render(states.Home);
+        // If user is routing to Blog, then render the blog page here.
+        if(router.lastRouteResolved() && router.lastRouteResolved().params.path === 'blog'){
+            render(states.Blog);
+        }
     });
 
 

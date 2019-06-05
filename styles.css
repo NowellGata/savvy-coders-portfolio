@@ -45,6 +45,7 @@ h2 {
 	font-family: "Raleway", sans-serif;
     text-align: center;
     font-size:40px;
+    color: white;
 }
 
 h3 {
@@ -178,6 +179,7 @@ input, form {
 .form1 input[type=email],
 textarea,
 select{
+
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -200,10 +202,10 @@ select{
 .form1 input[type=email]:focus,
 .form1 textarea:focus,
 .form1 select:focus{
-	-moz-box-shadow: 0 0 8px #88D5E9;
-	-webkit-box-shadow: 0 0 8px #88D5E9;
-	box-shadow: 0 0 8px #88D5E9;
-	border: 1px solid #88D5E9;
+	-moz-box-shadow: 0 0 8px lightblue;
+	-webkit-box-shadow: 0 0 8px lightblue;
+	box-shadow: 0 0 8px lightblue;
+	border: 1px solid lightblue;
 }
 .form1 .field-divided{
 	width: 49%;

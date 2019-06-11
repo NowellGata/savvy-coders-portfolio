@@ -2,6 +2,6 @@ import links from './Links';
 
 export default {
     'pageContent': 'Home',
-    'title': 'Welcome to Savvy Portfolio',
+    'title': 'Nowell Gata',
     'links': links
 };

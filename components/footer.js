@@ -1,6 +1,7 @@
 export default (state) =>
 
-    `<footer>
+    `<div></div>
+    <footer>
   &copy; 2019 Nowell Gata
   <a href="https://github.com/NowellGata" target="blank">
     <i class="fab fa-linkedin"></i>

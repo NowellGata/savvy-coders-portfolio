@@ -1,5 +1,29 @@
 export default (state) =>
-    `<header>
+    `
+    <navigation>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">Photos</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Restaurant Consultation</a>
+          <a href="#">Savvy Coders</a>
+          <a href="#">My Portfolio</a>
+        </div>
+      </div>
+    </div>
+    </navigation>
+          <li>
+            Portfolio
+            <ul id="dropdown">
+              ${buildNavHTML(state.links.dropdown)}
+            </ul>
+          </li>
+        </ul>
+      </nav>;
 <h1> ${state.title}</h1>
 <h2>aspiring developer + chef + talent acquisition</h2></header>
 <h3>

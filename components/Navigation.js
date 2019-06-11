@@ -16,7 +16,6 @@ function buildNavHTML(stateLinks){
         )
         .join(' ');
 }
-
 export default (state) => `<nav>
     <ul class="flex">
       ${buildNavHTML(state.links.primary)}
@@ -28,6 +27,10 @@ export default (state) => `<nav>
       </li>
     </ul>
   </nav>`;
+// export default (state) => `<nav>
+//     <ul class="flex">
+//       ${buildNavHTML(state.links.primary)}
+//       `;
 
 // function buildIconHTML(link){
 //     if(link.icon){

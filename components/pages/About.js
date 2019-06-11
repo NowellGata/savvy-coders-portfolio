@@ -1,2 +1,2 @@
 export default (state) => `<h1>${state.title}</h1>
-    <p>Stop being so NOSY!</p>;`;
+    <p>For a comprehensive CV and resume, please email me at nowell.gata@gmail.com</p>;`;

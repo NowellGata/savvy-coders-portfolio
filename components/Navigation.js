@@ -1,4 +1,6 @@
 function buildIconHTML(link){
+    // If link.icon actually exists on this link, it is 'truth-y' so the `if` will take effect.
+    // If link.icon is cd .t there for this link - it's UNDEFINED, of 'false-y' so the 'if' will NOT take effect.
     if(link.icon){
         return `<span class="${link.icon}"></span>`;
     }
@@ -16,6 +18,7 @@ function buildNavHTML(stateLinks){
         )
         .join(' ');
 }
+
 export default (state) => `<nav>
     <ul class="flex">
       ${buildNavHTML(state.links.primary)}
@@ -27,50 +30,3 @@ export default (state) => `<nav>
       </li>
     </ul>
   </nav>`;
-// export default (state) => `<nav>
-//     <ul class="flex">
-//       ${buildNavHTML(state.links.primary)}
-//       `;
-
-// function buildIconHTML(link){
-//     if(link.icon){
-//         return `<span class="${link.icon}"></span>`;
-//     }
-// }
-
-// function buildNavHTML(stateLinks) {
-//   return stateLinks.map(
-//     (link) =>
-//     `<li><a href="/${link.text.toLowerCase()}" data-navigo>  ${buildIconHTML(link)} ${link.text}
-//   </a>
-// </li>`
-// )
-// ;
-
-// let linksHTML = '';
-//     // Remove all the forEach and replace with MAP
-//     stateLinks.map((link) =>
-//     stateLinks.forEach((link) => {
-//         linksHTML += `
-
-//     });
-
-//     return linksHTML;
-// }
-
-// export default (state) => {
-//     console.log('Navigation has this state', state);
-
-//     return `
-//   <nav class= "navbar">
-//     <ul class="flex">
-//       ${buildNavHTML(state.links.primary)}
-//       <li>
-//         Portfolio
-//         <ul class = "dropdown">
-//            ${buildNavHTML(state.links.dropdown)}
-//         </ul>
-//       </li>
-//     </ul>
-// </nav>`;
-// };

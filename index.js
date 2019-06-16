@@ -26,7 +26,7 @@ function render(state){
     router.updatePageLinks();
 }
 
-function handleRoutes(params){}
+// function handleRoutes(params){}
 
 
 // Fetch returns a Promise that contains a RESPONSE Object
@@ -50,7 +50,7 @@ axios
     });
 
 
-console.log('I am after axios!');
+// console.log('I am after axios!');
 
 router
     .on(':path', (params) => {

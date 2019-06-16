@@ -28,25 +28,19 @@ function render(state){
 
 function handleRoutes(params){}
 
-router
-    .on(':path', (params) => {
-        render(states[capitalize(params.path)]);
-    })
-    .on('/', () => render(states.Home))
-    .resolve();
 
 // Fetch returns a Promise that contains a RESPONSE Object
-// Common structure when using FETCH
-fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+// // Common structure when using FETCH
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
 
 axios
     .get('https://jsonplaceholder.typicode.com/posts')
     // After CALL STACK is all empty, JS can execute the 'then' to 'unwrap' the Promise
     .then((response) => {
-    // 'response.data' is an Array of 'Post' Objects
-    // We need to get this into states.Blog.posts.
+        // 'response.data' is an Array of 'Post' Objects
+        // We need to get this into states.Blog.posts.
         response.data.forEach((post) => states.Blog.posts.push(post));
         // console.log('After forEach', states);
         // If user is routing to Blog, then render the blog page here.
@@ -57,3 +51,10 @@ axios
 
 
 console.log('I am after axios!');
+
+router
+    .on(':path', (params) => {
+        render(states[capitalize(params.path)]);
+    })
+    .on('/', () => render(states.Home))
+    .resolve();

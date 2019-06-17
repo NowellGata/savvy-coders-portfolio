@@ -1,4 +1,4 @@
-export default (state) =>
+export default function(state){
     `
     <navigation>
     <div class="navbar">
@@ -45,3 +45,4 @@ export default (state) =>
 </div>
 
 `;
+}

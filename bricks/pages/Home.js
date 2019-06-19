@@ -1,6 +1,6 @@
 export default function(state){
     `
-  <navigation>
+  <nav>
   <div class="navbar">
     <a href="#home">Home</a>
     <a href="#news">Photos</a>
@@ -15,11 +15,10 @@ export default function(state){
       </div>
     </div>
   </div>
-  </navigation>
+  </nav>
         <li>
           Portfolio
           <ul id="dropdown">
-            ${buildNavHTML(state.links.dropdown)}
           </ul>
         </li>
       </ul>

@@ -2,6 +2,15 @@ import links from './Links';
 
 export default {
     'pageContent': 'Contact',
-    'title': 'Contact Me',
+    'title': 'Contact Me!',
     'links': links
 };
+
+
+// import links from './Links';
+
+// export default {
+//     'pageContent': 'Contact',
+//     'title': 'Contact Me',
+//     'links': links
+// };

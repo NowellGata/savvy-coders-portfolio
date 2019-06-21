@@ -1,8 +1,8 @@
 h1 {
     font-family: Raleway;
     text-align: center;
-    font-size: 80px;
-    color: whitesmoke
+    font-size: 120px;
+    color: white;
 }
 
 h2 {
@@ -10,28 +10,53 @@ h2 {
     text-align: center;
     font-size: 40px;
     color: whitesmoke;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h3 {
     font-family: Raleway;
     text-align: center;
     font-size: 27px;
-    color: lightgray
-}
-
-body {
-    background-color: darkgray;
-    width: 100%;
-    border: 15px solid darkslateblue;
-    margin-left: 100px, 100px, 100px, 100px;
-    padding: 50px;
+    font-color: lightgray;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    border: 5px solid lightgray;
-    text-align: center;
+    border: 5px double whitesmoke;
+    box-shadow: 5px 10px #888888;
+}
+
+body {
+    background-image: url("https://i.imgur.com/rGke8nc.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 20px double black;
+    position: auto;
+    top: 0;
+    left: 0;
+
+  /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    /* border: 15px solid darkslateblue;
+    margin: 50px, 50px, 50px, 50px;
+    padding: 50px; */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: slategray;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+p {
+    color: whitesmoke;
 }
 
 span {
@@ -42,18 +67,43 @@ span {
     text-align: center
 }
 
-.container {
-    width: 30%;
-    text-align: center;
-    font-size: 25px margin: auto;
+
+.flex-container {
+    color: whitesmoke;
+    font-family: Exo;
+    font-size: 25px;
     padding: 30px;
-    font-family: helvetica
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
 }
 
 .emailbutton {
     display: inline-block;
     border-radius: 4px;
-    background-color: darkslateblue;
+    background-color: slategray;
     border: none;
     color: silver;
     text-align: center;
@@ -91,23 +141,32 @@ span {
 }
 
 .howdy {
-    background-image: linear-gradient(darkslateblue, whitesmoke);
+    color: linear-gradient(blue, whitesmoke);
     font-size: 20px;
     font-family: Exo;
     width: 75%;
-    border: 1px solid whitesmoke;
+    border: 2px double whitesmoke;
     padding: 50px;
-    margin: auto;
+    margin: 20px;
     box-shadow: 5px 10px #888888;
 }
 
+.nole {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* Navigation bar */
 ul {
     font-family: Raleway;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: slategray;
 }
 
 li {
@@ -134,6 +193,47 @@ li a:hover:not(.active) {
 .active {
     background-color: whitesmoke;
 }
+
+/* Dropdown on Navigation Bar */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 
 
 /* .navbar {

@@ -9,7 +9,7 @@ function buildPostsHTML(posts){
 
 export default function(state){
     return `
-    <h1>Hello from the Blog! ${state.title}</h1>
+    <h2>Welcome to ${state.title}'s Blog! </h2>
     ${buildPostsHTML(state.posts)};
     `;
 }

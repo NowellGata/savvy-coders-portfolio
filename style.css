@@ -18,32 +18,19 @@ h3 {
     font-family: Raleway;
     text-align: center;
     font-size: 27px;
-    font-color: lightgray;
-    margin-left: 50px;
+    color: lightgray;
+     margin-left: 50px;
     margin-right: 50px;
 }
 
 img {
-    border: 5px double whitesmoke;
-    box-shadow: 5px 10px #888888;
+    border: 5px whitesmoke;
 }
 
 body {
-    background-image: url("https://i.imgur.com/rGke8nc.jpg");
-    opacity: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 20px double black;
-    position: auto;
-    top: 0;
-    left: 0;
-
-  /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
-    /* border: 15px solid darkslateblue;
-    margin: 50px, 50px, 50px, 50px;
-    padding: 50px; */
+    background-color: black;
+    margin: 20px;
+    padding: 5px;
 }
 
 footer {
@@ -69,36 +56,32 @@ span {
 
 
 .flex-container {
-    color: whitesmoke;
-    font-family: Exo;
-    font-size: 25px;
-    padding: 30px;
-    margin: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-}
+
+    }
 
 .flex-item:nth-child(1) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+    }
 
 .flex-item:nth-child(2) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+    }
 
 .flex-item:nth-child(3) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+    }
 
 .emailbutton {
     display: inline-block;
@@ -148,7 +131,7 @@ span {
     border: 2px double whitesmoke;
     padding: 50px;
     margin: 20px;
-    box-shadow: 5px 10px #888888;
+
 }
 
 .nole {
@@ -156,7 +139,7 @@ span {
     height: auto;
     margin: 20px;
     text-align: center;
-}
+   }
 
 
 /* Navigation bar */
@@ -235,6 +218,55 @@ li a:hover:not(.active) {
     background-color: #3e8e41;
   }
 
+/* Contact Page */
+
+table {
+    padding-top: 80px;
+    text-align: center;
+    font-family: lucida;;
+    background: url(https://media2.giphy.com/media/3o7abxL4cJRMPJoVEY/giphy.gif?cid=790b76115d0da7fb56444b6651b696f4&rid=giphy.gif) 50%;
+    background-size: cover;
+  }
+
+  .heading {
+    display: inline-block;
+    color: red;
+    background-color: yellow;
+    font-size: 30px
+
+  }
+
+  label {
+    font-family: helvetica;
+    color: red;
+    background-color: yellow;
+  }
+
+  table {
+  padding-top: 80px;
+  text-align: center;
+  font-family: lucida;;
+  background: url(https://media2.giphy.com/media/3o7abxL4cJRMPJoVEY/giphy.gif?cid=790b76115d0da7fb56444b6651b696f4&rid=giphy.gif) 50%;
+  background-size: cover;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.heading {
+    font-size: 50px;
+
+}
+
+label {
+  font-family: helvetica;
+  color: red;
+  background-color: yellow;
+}
 
 /* .navbar {
     overflow: hidden;
@@ -289,4 +321,4 @@ li a:hover:not(.active) {
         display: block;
         text-align: left;
     }
-} */
+}

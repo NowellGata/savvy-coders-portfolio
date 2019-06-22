@@ -34,11 +34,6 @@ function buildNavHTML(stateLinks){
 export default (state) => `<nav>
   <ul class="navbar">
     ${buildNavHTML(state.links.primary)}
-    <li>
-      Portfolio
-      <ul id="dropdown">
-        ${buildNavHTML(state.links.dropdown)}
-      </ul>
-    </li>
+
   </ul>
 </nav>`;

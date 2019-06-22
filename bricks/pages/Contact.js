@@ -1,4 +1,4 @@
-export default function(){
+export default function(state){
     return `
 <h1>${state.title}</h1>
 <form action="mailto:nowell.gata@gmail.com">

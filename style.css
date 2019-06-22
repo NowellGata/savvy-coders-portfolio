@@ -19,10 +19,9 @@ h3 {
     text-align: center;
     font-size: 27px;
     color: lightgray;
-     margin-left: 50px;
+    margin-left: 50px;
     margin-right: 50px;
 }
-
 
 body {
     background-color: black;
@@ -39,7 +38,6 @@ footer {
     background-color: slategray;
     color: whitesmoke;
     font-size: 20px;
-
 }
 
 p {
@@ -55,7 +53,6 @@ span {
     text-align: center
 }
 
-
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -63,26 +60,25 @@ span {
     justify-content: center;
     align-content: flex-start;
     align-items: center;
-
-    }
+}
 
 .flex-item:nth-child(1) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    }
+}
 
 .flex-item:nth-child(2) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    }
+}
 
 .flex-item:nth-child(3) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    }
+}
 
 .emailbutton {
     display: inline-block;
@@ -125,14 +121,13 @@ span {
 }
 
 .howdy {
-    color: linear-gradient(blue, whitesmoke);
+    background-color: linear-gradient(blue, whitesmoke);
     font-size: 20px;
     font-family: Exo;
     width: 75%;
     border: 2px double whitesmoke;
     padding: 50px;
     margin: 20px;
-
 }
 
 .nole {
@@ -140,10 +135,11 @@ span {
     height: auto;
     margin: 20px;
     text-align: center;
-   }
+}
 
 
 /* Navigation bar */
+
 ul {
     font-family: Raleway;
     list-style-type: none;
@@ -178,7 +174,9 @@ li a:hover:not(.active) {
     background-color: whitesmoke;
 }
 
+
 /* Dropdown on Navigation Bar */
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -186,88 +184,92 @@ li a:hover:not(.active) {
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
 
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
-  .dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
     background-color: #3e8e41;
-  }
+}
+
 
 /* Contact Page */
 
 table {
     padding-top: 80px;
     text-align: center;
-    font-family: lucida;;
+    font-family: lucida;
+    ;
     background: url(https://media2.giphy.com/media/3o7abxL4cJRMPJoVEY/giphy.gif?cid=790b76115d0da7fb56444b6651b696f4&rid=giphy.gif) 50%;
     background-size: cover;
-  }
+}
 
-  .heading {
+.heading {
     display: inline-block;
     color: red;
     background-color: yellow;
     font-size: 30px
+}
 
-  }
-
-  label {
+label {
     font-family: helvetica;
     color: red;
     background-color: yellow;
-  }
+}
 
-  table {
-  padding-top: 80px;
-  text-align: center;
-  font-family: lucida;;
-  background: url(https://media2.giphy.com/media/3o7abxL4cJRMPJoVEY/giphy.gif?cid=790b76115d0da7fb56444b6651b696f4&rid=giphy.gif) 50%;
-  background-size: cover;
-  color: red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: center;
+table {
+    padding-top: 80px;
+    text-align: center;
+    font-family: lucida;
+    ;
+    background: url(https://media2.giphy.com/media/3o7abxL4cJRMPJoVEY/giphy.gif?cid=790b76115d0da7fb56444b6651b696f4&rid=giphy.gif) 50%;
+    background-size: cover;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
 }
 
 .heading {
     font-size: 50px;
-
 }
 
 label {
-  font-family: helvetica;
-  color: red;
-  background-color: yellow;
+    font-family: helvetica;
+    color: red;
+    background-color: yellow;
 }
+
 
 /* .navbar {
     overflow: hidden;

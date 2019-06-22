@@ -1,6 +1,5 @@
-export default () =>
-
-    `<footer>
+export default function() {
+ return  `<footer>
   &copy; 2019 Nowell Gata
   <a href="https://github.com/NowellGata" target="blank">
     <i class="fab fa-linkedin"></i>
@@ -12,4 +11,4 @@ export default () =>
     <i class="fab fa-github-square"></i>
    </a>
 </footer>
-`;
+`};

@@ -23,9 +23,6 @@ h3 {
     margin-right: 50px;
 }
 
-img {
-    border: 5px whitesmoke;
-}
 
 body {
     background-color: black;
@@ -37,13 +34,17 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
+    margin: 10px;
+    border: 5px;
     background-color: slategray;
     color: whitesmoke;
     font-size: 20px;
+
 }
 
 p {
     color: whitesmoke;
+    text-align: center;
 }
 
 span {

@@ -25,19 +25,40 @@ h3 {
 
 body {
     background-color: black;
-    margin: 20px;
+    margin: 0 auto;
     padding: 5px;
+
 }
 
+/* Footer Style */
+
 footer {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding-left: 10px;
     margin: 10px;
-    border: 5px;
+    border: 2px double whitesmoke;
     background-color: slategray;
     color: whitesmoke;
     font-size: 20px;
+    border-radius: 100px 10px;
+    padding-left: 20px;
+    width: 100%;
+    height: 35px;
+}
+
+/* .social {
+     position: sticky;
+    top: 0;
+    z-index: 100;
+} */
+
+
+i {
+    font-size: 40px;
+    color: black;
+    padding-left: 5px;
 }
 
 p {
@@ -79,6 +100,7 @@ input[type=submit]:hover {
     background-color: lightblue;
 }
 
+
 .formcontainer {
     border-radius: 5px;
     background-color: lightgray;
@@ -86,37 +108,55 @@ input[type=submit]:hover {
     max-width: 75%;
 }
 
+/* Photos on Home Page */
+
+.imgOne .text {
+    position:relative;
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+    }
+
+.imgOne:hover .text {
+    visibility:visible;
+}
+
+
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: flex-start;
-    align-items: center;
-}
+    align-content: stretch;
+    align-items: flex-start;
+    margin: 20px;
+ }
+
+
 
 .flex-item:nth-child(1) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+  }
 
 .flex-item:nth-child(2) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+    }
 
 .flex-item:nth-child(3) {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-}
+    }
+
 
 .emailbutton {
     display: inline-block;
     border-radius: 4px;
-    background-color: slategray;
+    background-color: white;
     border: none;
     color: silver;
     text-align: center;
@@ -124,7 +164,7 @@ input[type=submit]:hover {
     padding: 20px;
     width: 200px;
     transition: all 0.5s;
-    cursor: pointer;
+    cursor: crosshair;
     margin: 5px;
 }
 
@@ -154,13 +194,15 @@ input[type=submit]:hover {
 }
 
 .howdy {
-    background-color: linear-gradient(blue, whitesmoke);
     font-size: 20px;
     font-family: Exo;
     width: 75%;
     border: 2px double whitesmoke;
-    padding: 50px;
-    margin: 20px;
+    border-radius: 15px 50px;
+    background: orange;
+    padding: 20px;
+    width: auto;
+    height: auto;
 }
 
 .nole {
@@ -173,13 +215,22 @@ input[type=submit]:hover {
 
 /* Navigation bar */
 
-ul {
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    border: 2px double white;
     font-family: Raleway;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: slategray;
+    border-radius: 100px 10px;
+    padding: 20px;
+    width: 30%;
+    height: 20px;
 }
 
 li {
@@ -288,3 +339,21 @@ label {
     font-family: helvetica;
     color: whitesmoke;
 }
+
+
+/* About Me Page */
+
+p {
+    text-align: left;
+    font-family: Raleway;
+    font-size: 18px;
+
+  }
+
+  .bio {
+    border-radius: 15px 50px;
+    background: slategray;
+    padding: 20px;
+    width: 100%;
+    height:100%;
+  }

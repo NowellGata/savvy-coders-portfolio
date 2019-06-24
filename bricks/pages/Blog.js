@@ -2,7 +2,7 @@ function buildPostsHTML(posts){
     // console.log('I received posts', posts);
     return posts.map((post) => `<article>
         <h2>${post.title}</h2>
-        <p>${post.body}</p>
+        <p>${post.body}HOWDY</p>
         </article>`).join('');
 }
 

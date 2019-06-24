@@ -1,6 +1,6 @@
 export default function(state){
     return `<h1> ${state.title}</h1>
-    <h2>aspiring developer + chef + content creator</h2>
+    <h2>aspiring developer + content creator + chef</h2>
     </header>
     <h3>
         “You're always you, and that don't change, and you're always changing, and there's nothing you can do about it.” ―<span>Neil Gaiman, The Graveyard
@@ -11,7 +11,7 @@ export default function(state){
     </div>
 
     <div class="centro">
-            <button class="emailbutton" action="mailto:nowell.gata@gmail.com" style="vertical-align:middle"><span>Email Me! </span></button>
+            <button class="emailbutton" action="mailto:nowell.gata@gmail.com" style="vertical-align:middle"><span>Email Me!</span></button>
         </div>
 
 

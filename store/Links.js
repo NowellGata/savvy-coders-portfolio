@@ -1,8 +1,6 @@
 export default {
     'primary': [
-        { 'text': 'Home', 'icon': 'fas fa-home' }, { 'text': 'About', 'icon': 'fas fa-id-card-alt' }, { 'text': 'Contact', 'icon': 'fas fa-phone' }, { 'text': 'Blog' }
+        { 'text': 'HOME' }, { 'text': 'ABOUT' }, { 'text': 'CONTACT' }, { 'text': 'BLOG' }
     ],
     'dropdown': [ { 'text': 'Class Project' }, { 'text': 'Hack-a-Thon' }, { 'text': 'Demo Day' } ]
 };
-
-

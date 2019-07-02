@@ -33,7 +33,7 @@ export default function(state){
     </span>
     <span class="border">
     <div class="p-2"><img src="https://i.imgur.com/yMTD54G.jpg" alt="Savvy Coders Hackathon" height="200" width="200"></img>
-    <a href="#!" class="card-link">Card link</a>
+    <a href="https://tender-elion-925d8a.netlify.com" class="capstone">Capstone</a>
     </div>
     </span>
   </div>

@@ -1,7 +1,7 @@
 export default function(){
     return `<footer>
       <div class= "social">
-      <h3 class="text-light">&copy; 2019 Nowell Gata</h3>
+
       <div class="icons">
       <a href="https://www.linkedin.com/in/nowellgata" target="LinkedIn">
       <i class="fab fa-linkedin-in"></i>
@@ -12,6 +12,7 @@ export default function(){
       <a href="https://github.com/NowellGata" target="github">
       <i class="fab fa-github-square"></i>
       </a>
+      <h4 class="text-light">&copy; 2019 Nowell Gata</h4>
       </div>
       </div>
     </footer>

@@ -38,12 +38,20 @@ nav {
     text-align: left;
 }
 
+.aboubox {
+    margin: 15%;
+    padding: 10px;
+    text-align: center;
+    background-color: slategray;
+}
+
 .border {
     margin: 5px;
 }
 
 .lead {
     margin: 10px;
+    color: white;
 }
 
 .social {
@@ -57,4 +65,31 @@ nav {
 
 .p-2 {
     background-color: slategray;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
 }

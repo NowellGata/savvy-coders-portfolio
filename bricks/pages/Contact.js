@@ -4,22 +4,27 @@ export default function(state){
 
 <h3>Email: nowell.gata@gmail.com</h3>
 <h3>Phone: (314) 449-0082</h3>
-<form action="mailto:nowell.gata@gmail.com">
-<div class="contact">
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name.">
+<form action="https://formspree.io/nowell.gata@gmail.com" method="POST">
+<div class="flex-container">
 
-  <label for="lname">Last Name</label>
+  <label for="fname" name="name">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your first name.">
+
+  <label for="lname" name="name">Last Name</label>
   <input type="text" id="lname" name="lastname" placeholder="Your last name.">
 
-  <label for="phone">Phone Number</label>
-  <input id="phone" name="phone" placeholder="###-###-####"></input>
+  <label for="phone" name="name">Phone Number</label>
+  <input id="phone" name="phone" placeholder="Phone Number"></input>
 
-  <label for="message"></label>
-  <textarea id="message" name="message" placeholder="Send me your thoughts..." style="height:200px"></textarea>
+  <label for="message" name="name"></label>
+  <textarea id="message" name="message" placeholder="Send me your feedback" style="height:200px"></textarea>
+  <hr></hr>
 
-  <input type="submit" href="mailto:nowell.gata@gmail.com" value="Submit email to: nowell.gata@gmail.com">
+  <input type="submit" value="Submit email to: nowell.gata@gmail.com" class="btn btn-light" name="name">
   </div>
-</form>
+
+  </form>
+
+<hr></hr>
 `;
 }
